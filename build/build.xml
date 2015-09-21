@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="all" name="ArgList">
+    <target name="all" depends="ArgList"/>
+    <target name="ArgList">
+        <jar destfile="ArgList.jar" filesetmanifest="mergewithoutmain">
+            <fileset dir="../bin"/>
+            <fileset dir="../src"/>
+        </jar>
+    </target>
+</project>
